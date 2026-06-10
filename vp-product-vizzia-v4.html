@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VP Product — Vizzia</title>
+<meta name="description" content="Vizzia is hiring a VP of Product to build and operate the product function — Hardware × AI × SaaS, Series B, Paris." />
+<meta property="og:title" content="VP Product — Vizzia" />
+<meta property="og:description" content="Vizzia is hiring a VP of Product to build and operate the product function — Hardware × AI × SaaS, Series B, Paris." />
+<meta property="og:image" content="https://cdn.prod.website-files.com/685396cd228249e409b50403/68ca74c55580f7f11af1e2ca_open-graph-fr.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="https://www.vizzia.com/favicon.ico" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Microsoft Clarity Tracker -->
+<!-- TODO: Replace YOUR_PROJECT_ID below with your Microsoft Clarity project ID (Settings → Setup → Tracking code) -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_PROJECT_ID");
+</script>
+
+<style>
+  :root {
+    --warm-black: #004843;
+    --myrtle-green: #377570;
+    --pastel-blue: #b1c9c7;
+    --beige: #fff6de;
+    --topaz: #f9c67d;
+    --orange: #ffb850;
+    --text: #2d2a29;
+    --text-muted: #6b6864;
+    --outer-space: #484848;
+    --border: rgba(45, 42, 41, 0.12);
+    --border-soft: rgba(45, 42, 41, 0.06);
+    --white: #ffffff;
+    --grey-bg: #faf9f7;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--text);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "ss02";
+  }
+
+  /* HEADER */
+  header.site-header {
+    border-bottom: 1px solid var(--border-soft);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.92);
+  }
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .logo {
+    color: var(--warm-black);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.15s ease;
+  }
+  .logo:hover { opacity: 0.7; }
+  .logo-mark {
+    width: 92px;
+    height: 32px;
+    display: block;
+    color: var(--warm-black);
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .header-link {
+    font-size: 14px;
+    color: var(--outer-space);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    transition: color 0.15s ease;
+  }
+  .header-link:hover { color: var(--warm-black); }
+  .header-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--orange);
+    color: var(--text);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--orange);
+    letter-spacing: 0.01em;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+  .header-cta:hover {
+    background: #ffc46b;
+    border-color: #ffc46b;
+    color: var(--text);
+    transform: translateY(-1px);
+  }
+
+  /* HERO */
+  .hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 100px 32px 64px;
+  }
+  .hero-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--myrtle-green);
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+  .hero-meta-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--orange);
+  }
+  .hero-title {
+    font-family: 'Geist', sans-serif;
+    font-weight: 300;
+    font-size: clamp(48px, 7vw, 92px);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    color: var(--warm-black);
+    margin-bottom: 24px;
+    max-width: 920px;
+  }
+  .hero-sub {
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--outer-space);
+    max-width: 720px;
+    font-weight: 300;
+  }
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 36px;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 14px;
+    background: var(--beige);
+    color: var(--warm-black);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+  }
+  .tag.green {
+    background: rgba(86, 171, 97, 0.12);
+    color: var(--warm-black);
+  }
+  .tag.blue {
+    background: rgba(177, 201, 199, 0.35);
+    color: var(--warm-black);
+  }
+
+  /* MAIN CONTENT */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  section.content-section {
+    padding: 56px 0;
+    border-top: 1px solid var(--border-soft);
+  }
+  section.content-section:first-of-type {
+    border-top: none;
+    padding-top: 32px;
+  }
+
+  .section-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--myrtle-green);
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-family: 'Geist', sans-serif;
+    font-weight: 300;
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -0.028em;
+    color: var(--warm-black);
+    margin-bottom: 32px;
+  }
+  h3 {
+    font-family: 'Geist', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.35;
+    color: var(--warm-black);
+    margin-top: 28px;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  p {
+    color: var(--text);
+    margin-bottom: 18px;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  p strong, li strong {
+    font-weight: 600;
+    color: var(--warm-black);
+  }
+  ul {
+    padding-left: 0;
+    margin-bottom: 18px;
+    list-style: none;
+  }
+  ul li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--orange);
+  }
+  a {
+    color: var(--myrtle-green);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: color 0.15s ease;
+  }
+  a:hover { color: var(--warm-black); }
+  em { font-style: italic; color: var(--outer-space); }
+
+  .highlight-box {
+    background: var(--beige);
+    border-left: 3px solid var(--orange);
+    padding: 24px 28px;
+    margin: 28px 0;
+    border-radius: 4px;
+  }
+  .highlight-box p:last-child { margin-bottom: 0; }
+
+  /* CTA SECTION */
+  .cta-section {
+    background: var(--warm-black);
+    color: var(--white);
+    padding: 96px 32px;
+    margin-top: 80px;
+  }
+  .cta-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cta-section .section-label {
+    color: var(--pastel-blue);
+  }
+  .cta-section h2 {
+    color: var(--white);
+    margin-bottom: 24px;
+  }
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 19px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+  }
+  .cta-section ul li {
+    color: rgba(255, 255, 255, 0.92);
+  }
+  .cta-section ul li::before {
+    background: var(--orange);
+  }
+  .cta-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--orange);
+    color: var(--text);
+    padding: 14px 26px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--orange);
+    transition: all 0.15s ease;
+    letter-spacing: 0.005em;
+  }
+  .btn-primary:hover {
+    background: #ffc46b;
+    border-color: #ffc46b;
+    color: var(--text);
+    transform: translateY(-1px);
+  }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--white);
+    padding: 14px 26px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.15s ease;
+  }
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: var(--white);
+  }
+
+  /* FOOTER */
+  footer.site-footer {
+    background: var(--white);
+    border-top: 1px solid var(--border-soft);
+    padding: 40px 32px;
+  }
+  .footer-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .footer-inner a { color: var(--text-muted); text-decoration: none; }
+  .footer-inner a:hover { color: var(--warm-black); }
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .header-inner { padding: 14px 20px; }
+    .header-nav { gap: 14px; }
+    .header-link.hide-mobile { display: none; }
+    .hero { padding: 64px 20px 48px; }
+    .hero-sub { font-size: 18px; }
+    main { padding: 0 20px; }
+    section.content-section { padding: 48px 0; }
+    .cta-section { padding: 64px 20px; }
+    .cta-section p { font-size: 17px; }
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+    .footer-links { flex-wrap: wrap; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="https://www.vizzia.com/en" class="logo" target="_blank" rel="noopener" aria-label="Vizzia">
+      <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 82 29">
+        <g>
+          <path fill="currentColor" d="M7.365 28.907-.051 9.064h3.807l3.53 10.279c.356 1.032 1.03 3.096 1.982 6.27.674-2.182 1.388-4.444 2.023-6.27L14.86 9.064h3.727l-7.415 19.843H7.365Zm12.711 0V8.993h3.581v19.914h-3.581Zm0-23.658V1.027h3.581V5.25h-3.581Zm9.16 19.997v.231h26.206v3.43H25.146V25.3l6.044-10.49h4.31l-6.264 10.437Z"/>
+          <path fill="currentColor" d="m55.442 12.593-6.219 10.502h-4.018l6.438-10.448v-.232H25.145v-3.43h30.296v3.608Zm1.488 16.314V8.993h3.582v19.914H56.93Zm0-23.658V1.027h3.582V5.25H56.93Zm14.9 23.658c-1.797 0-3.44-.45-4.931-1.349a10.491 10.491 0 0 1-3.584-3.684c-.876-1.536-1.314-3.236-1.314-5.1 0-1.864.438-3.564 1.315-5.1a10.218 10.218 0 0 1 3.583-3.652c1.49-.92 3.134-1.381 4.931-1.381 1.36 0 2.63.252 3.814.756a9.348 9.348 0 0 1 3.123 2.106v-2.6h3.288v19.741h-3.288v-2.599a10.05 10.05 0 0 1-3.123 2.106 9.622 9.622 0 0 1-3.814.756Zm.46-3.224c1.25 0 2.378-.307 3.387-.921a6.992 6.992 0 0 0 2.432-2.5c.614-1.053.921-2.216.921-3.488 0-1.272-.307-2.424-.92-3.455a6.66 6.66 0 0 0-2.433-2.5c-1.009-.636-2.137-.954-3.387-.954-1.249 0-2.389.318-3.419.954a7.001 7.001 0 0 0-2.432 2.5c-.592 1.031-.888 2.183-.888 3.455 0 1.272.296 2.435.888 3.487a7.373 7.373 0 0 0 2.432 2.5c1.03.615 2.17.922 3.42.922Z"/>
+        </g>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <a class="header-link hide-mobile" href="https://www.vizzia.com/en" target="_blank" rel="noopener">About Vizzia</a>
+      <a class="header-cta" href="mailto:alexandre@vizzia.fr,brice@groundadvisory.com?subject=VP%20Product%20Vizzia%20%E2%80%94%20Application">Apply →</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-meta">
+    <span class="hero-meta-dot"></span>
+    <span>Vizzia · Paris · Now hiring</span>
+  </div>
+  <h1 class="hero-title">VP Product</h1>
+  <p class="hero-sub">Build and operate the product function of the leading Video-Surveillance-as-a-Service platform in Europe. Hardware × AI × SaaS. Series B. Paris.</p>
+  <div class="hero-tags">
+    <span class="tag green">Series B · €30M raised</span>
+    <span class="tag blue">160 cities · 130% NRR</span>
+    <span class="tag">Hardware × AI × SaaS</span>
+  </div>
+</section>
+
+<main>
+
+  <section class="content-section">
+    <div class="section-label">01 — The company</div>
+    <h2>The leading VSaaS platform in Europe.</h2>
+    <p>Vizzia is the leading Video-Surveillance-as-a-Service (VSaaS) platform in Europe, equipping cities with intelligent cameras to address two specific problems: <strong>illegal waste dumping</strong> and <strong>public safety</strong>.</p>
+    <p>We replaced an industry that had not moved in twenty years. The legacy approach — on-prem servers, multi-month installations, €30k per camera — could not scale. Our quick-deploy 4G/5G cameras install in five minutes on a lamp post, stream continuously, run frugal edge AI, and feed two verticalized SaaS platforms used by local police, waste services, and city operations teams.</p>
+    <p>We were founded in 2022. Today: <strong>160 cities equipped in France and expanding in Europe, €8.8M TCV signed in 2025, 130% NRR, &lt;5% yearly churn, 86% of clients signed without a POC</strong>. We just raised €30M in Series B to accelerate our development and be on a path to €100M+ ARR by 2029. The long-term mission is to become the VSaaS leader in Europe — a €10bn+ company in a market currently dominated by hardware constructors and US incumbents (Verkada, Flock, Axon).</p>
+  </section>
+
+  <section class="content-section">
+    <div class="section-label">02 — The product</div>
+    <h2>Vizzia is a Hardware × AI × SaaS product.</h2>
+    <p>We design and assemble our own quick-deploy 4G/5G edge gateways and cameras. We run our own computer vision models — at the edge for inference, in the cloud for continuous training — for illegal waste dumping detection, license plate recognition, vehicle analytics, and incident investigation. We serve two vertical SaaS platforms on top of that stack: <em>Waste</em> (city services, 80% reduction in dumping year one) and <em>Safety</em> (local police, 10x more investigations solved). The three layers share one common Devices + AI platform. They are designed as one product.</p>
+    <div class="highlight-box">
+      <p><strong>A Hardware × AI × SaaS product organization at the stage of a fast-growing Series B European scale-up is a rare combination.</strong> If the depth of the product surface is what you have been missing in your last role, it is what this role offers.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-label">03 — The challenge</div>
+    <h2>Move from tech-led to Empowered Product Teams — while the company triples.</h2>
+    <p>Vizzia sits at the transition point where most product organizations either succeed or fail: the move from a tech-led organisation to prove market-fit and traction to an <strong>Empowered Product Teams</strong> operating model — while the company doubles in ARR every twelve months and scales from ~130 to 300 people in 24 months.</p>
+    <p>What you must steer, as a VP of Product:</p>
+
+    <h3>Build the next chapter of the product organization.</h3>
+    <p>The Product function (seven people today, PMs and Designers) has carried Vizzia to 160 cities and a €30M Series B with a delivery-first culture. The next chapter is to layer in the operating model of an empowered product organization: a cascaded product strategy, North Star metrics by squad, continuous discovery as a weekly habit, and a decision-making model where the CTPO can step back from day-to-day arbitration to focus on long-term vision.</p>
+
+    <h3>Install the Product operating model across Hardware, AI, and the two SaaS verticals.</h3>
+    <p>Vizzia needs a real product strategy, consistent across all the scope and driving impact aligned with the company objectives. Coach squads to move into teams that own outcomes. Continuous discovery as a team habit. Arbitrage discipline grounded in assumption tests, not opinion. A common language between Devices, Waste, Safety, AI: three layers, one product.</p>
+
+    <h3>Scale this transformation while the company triples.</h3>
+    <p>The product function has to be built not just for today's size, but for the size we are racing toward, without losing the operator clarity that made the company successful in the first place.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="section-label">04 — The role</div>
+    <h2>As VP of Product, you have 4 main missions.</h2>
+
+    <h3>The product strategy.</h3>
+    <p>A small number of focused, insight-driven bets across Hardware, AI, and the two SaaS verticals. Aligned with the company strategy, consistent across all the product layers, cascaded so every squad can leverage their impact zone.</p>
+
+    <h3>The product teams.</h3>
+    <p>Transforming the current cross-functional teams (PM, Designer, Tech Lead, engineers) into empowered product teams, owning outcomes. You are accountable for the quality of these teams, the discovery they run, and the outcomes they deliver across Devices, Waste, Safety, and AI.</p>
+
+    <h3>The product talent.</h3>
+    <p>Recruit, coach, develop a bar of PMs and Designers to the best-practices of the industry. Coaching is an important part of the job, with a team that is eager to progress and already understands the need to transform.</p>
+
+    <h3>The product culture.</h3>
+    <p>Vizzia culture is strongly focused on delivery. You will hold a pivotal role into evangelizing the culture of impact and the role of Product as a critical component of the company's growth.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="section-label">05 — The ecosystem</div>
+    <h2>Where you sit, who you work with.</h2>
+
+    <h3>Your team.</h3>
+    <p>Seven people in the Product function: a Head of Device Products (with 1 PM reporting to her), two customer-centric senior squads PMs, two Designers, and two technical PMs (Infra, AI).</p>
+
+    <h3>The Product &amp; Tech org around you.</h3>
+    <p>Three leaders will sit under the CTPO co-founder. You are one of them.</p>
+    <ul>
+      <li><strong>VP Engineering</strong> <em>(arriving shortly)</em> — software, cloud, AI engineering, device lifecycle management</li>
+      <li><strong>Head of Hardware</strong> — leading hardware design and engineering</li>
+      <li><strong>VP Product</strong> <em>(you)</em> — Product and Design across the whole stack: Devices, Waste SaaS, Safety SaaS, AI products</li>
+    </ul>
+    <p>The three Tech &amp; Product leaders operate as peers. The product strategy you write is what aligns them.</p>
+
+    <h3>The CTPO partnership.</h3>
+    <p>You report to the CTPO co-founder. Day to day, it works as a close collaboration. He owns the long-term vision, the market and technology depth he has built over years. You own the strategy execution, the operating model, the teams, the culture. He gives the direction, you give the structure.</p>
+
+    <h3>The executive committee.</h3>
+    <p>While you do not sit in the ExCo (Comex), you have direct, standing access to every member (CEO, CRO, CMO, COO, CFO). You lead the Quarterly Product Strategy Review presented to the committee. The committee expects you to operate as a peer, not as a function head who needs to be filtered.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="section-label">06 — What we will look for in you</div>
+    <h2>The bar.</h2>
+    <p>You have been a Head of Product or VP of Product before, in a company that went through a similar stage of growth.</p>
+
+    <div class="highlight-box">
+      <p><strong>On the Hardware dimension.</strong> Experience shipping an IoT or Hardware-enabled product would be ideal — it would make your first six months substantially easier (arbitrating roadmap trade-offs where a SaaS feature depends on a hardware release that ships every nine to twelve months, holding a coherent product strategy across a slower Hardware cycle and a fast SaaS cycle, speaking honestly with hardware, mechatronics, firmware, and AI engineers). What is non-negotiable is a deep, demonstrable appetite for Hardware. If "BOM", "firmware OTA", and "device life-cycle management" make you want to ask more questions rather than change the topic, you have the right instinct. <strong>If you have only worked on pure SaaS and you intend to keep it that way, this is not the right company for you.</strong></p>
+    </div>
+
+    <p>You did not inherit a working product organization, you built one.</p>
+    <p>You can describe, in detail, a product strategy you have written. Not because you read about strategy. Because you wrote one and the company used it.</p>
+    <p>You have killed features and product bets on evidence from discovery. You can name them.</p>
+    <p>You have coached PMs from junior to senior, and from senior to manager. They are still in the field, still doing the work, and they will take your reference call.</p>
+    <p>You can hold a room of executives, in a language they understand. You disagree before decisions, commit after them, and you do not undermine the decision afterwards.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="section-label">07 — What we offer</div>
+    <h2>What you get.</h2>
+    <p><strong>A product scope you will not find elsewhere in France.</strong> Hardware, embedded AI, cloud platform, two vertical SaaS, owned end-to-end by a single product organization. The depth of the system is the prize.</p>
+    <ul>
+      <li>A company at the stage where building the product function from the ground up still matters and where the work is still small enough that one person can shape it.</li>
+      <li>A real product solving real public-space problems in real cities, not another B2B SaaS dashboard.</li>
+      <li>Founders (CEO and CTPO) who understand the importance of this hire.</li>
+      <li>A compensation package that reflects the seniority of the role, with meaningful equity.</li>
+      <li>A team of PMs, Designers, and engineers who want a real product leader, and who will know within a week if you are one.</li>
+    </ul>
+    <p>Paris-based (Grands Boulevards). Three days a week onsite minimum.</p>
+  </section>
+
+</main>
+
+<section class="cta-section" id="apply">
+  <div class="cta-inner">
+    <div class="section-label">08 — How to apply</div>
+    <h2>Write directly to us.</h2>
+    <p>No cover letter. No application form. Send us a short message with:</p>
+    <ul style="text-align: left; max-width: 540px; margin: 0 auto 36px;">
+      <li>Your background, brief</li>
+      <li>One product strategy you have written, in your own words, in one paragraph</li>
+      <li>One large product bet you killed on evidence, and what you learned</li>
+      <li>Why you think you are the best person for Vizzia, now.</li>
+    </ul>
+    <div class="cta-buttons">
+      <a class="btn-primary" href="mailto:alexandre@vizzia.fr,brice@groundadvisory.com?subject=VP%20Product%20Vizzia%20%E2%80%94%20Application">Apply by email →</a>
+      <a class="btn-secondary" href="https://www.vizzia.com/en" target="_blank" rel="noopener">Discover Vizzia</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a href="https://www.vizzia.com/en" target="_blank" rel="noopener">© Vizzia 2026</a> · Recruitment partner: <a href="https://groundadvisory.com" target="_blank" rel="noopener">GROUND</a>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:alexandre@vizzia.fr">alexandre@vizzia.fr</a>
+      <a href="mailto:brice@groundadvisory.com">brice@groundadvisory.com</a>
+      <a href="https://www.linkedin.com/company/vizziafr/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
